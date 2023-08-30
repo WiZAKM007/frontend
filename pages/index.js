@@ -8,7 +8,7 @@ export default function index() {
   return (
     <>
     <Head>
-     <title>N_IT</title> <link rel="icon" href="/logo.png" type="image/icon"/> 
+     <title>Win_z</title> <link rel="icon" href="" type="image/icon"/> 
     </Head>
 
  

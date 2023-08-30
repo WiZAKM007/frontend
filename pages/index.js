@@ -3,91 +3,258 @@ import Head from 'next/head'
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 export default function index() {
   return (
     <>
     <Head>
-      <title>หน้าแรก</title>
+     <title>N_IT</title> <link rel="icon" href="/logo.png" type="image/icon"/> 
     </Head>
-  
-  <header>
-<nav className="navbar navbar-expand-lg bg-info">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Winz</a>
+
+ 
+    
+
+<header data-bs-theme="dark">
+<nav className="navbar navbar-expand-lg bg-body-tertiary">
+   <div className="container">
+    <Link className="navbar-brand" Link href="/."> 
+      <img src="icon.png" alt="Bootstrap" width={80} height={50} />&nbsp;  
+      </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" href="/.">หน้าแรก</Link>
+          <Link className="nav-link active" aria-current="page" link href="/.">Index</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" href="/about">เกี่ยวกับเรา</Link>
+          <Link className="nav-link active" aria-current="page" link href="filmcamera">Product</Link>
         </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            บริการของเรา
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">1</a></li>
-            <li><a className="dropdown-item" href="#">2</a></li>
-          </ul>
+        
+        <li className="nav-item">
+          <Link className="nav-link" Link href="about">About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" href="/contact"> ติดต่อเรา</Link>
+          <Link className="nav-link" Link href="support">Support</Link>
         </li>
+        
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-dark" type="submit">ค้นหา</button>
+        <button className="btn btn-outline-success" type="submit">Search</button>&nbsp; &nbsp; &nbsp; &nbsp; 
       </form>
+      
+       
+    </div>
+    
+  </div>
+  <div>
+  <button type="button" className="btn btn-outline-primary me-2">Login</button>
+  <button type="button" className="btn btn-primary">Sign-up</button>&nbsp; &nbsp;   
+   </div>
+</nav>
+</header>
+
+<main>
+  
+<div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-bs-interval={4000}>
+      <img src="01.jpg" className="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item" data-bs-interval={4000}>
+      <img src="02.jpg" className="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item"data-bs-interval={4000}>
+      <img src="03.jpg" className="d-block w-100" alt="..." />
     </div>
   </div>
-</nav>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true" />
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true" />
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br></br>
+<br></br>
+
 
 <div>
-
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="/01.jpg" class="d-block w-100" alt="cow" />
+  <section className="py-5 text-center container">
+    <div className="row py-lg-5">
+      <div className="col-lg-6 col-md-8 mx-auto">
+        <h1 className="fw-light">Film camera</h1>
+        <p className="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" className="btn btn-primary my-2">Main call to action</a>&nbsp;&nbsp;
+          <a href="#" className="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
     </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="/02.jpg" class="d-block w-100" alt="chick" />
+  </section>
+  <div className="album py-5 bg-body-tertiary">
+    <div className="container">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div className="col">
+          <div className="card shadow-sm">
+          <img src="Far Cry.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">Far Cry 6</p>
+              <h1><p className="card-text"> 500 ฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+                <small className="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+          <img src="farm together.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">farm together</p>
+              <h1><p className="card-text"> 200฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+                <small className="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+          <img src="football.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">Football Manager 2023</p>
+              <h1><p className="card-text"> 250 ฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+                <small className="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+            <img src="godofwar.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">God of War</p>
+              <h1><p className="card-text"> 300 ฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+                <small className="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+          <img src="No Man's Sky.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">No Man's Sky</p>
+              <h1><p className="card-text"> 199฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+                <small className="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+          <img src="fc6.jpg" alt="Bootstrap" width="100%" height="100%" />
+            <div className="card-body">
+              <p className="card-text">กล้องฟิล์ม Minolta Hi-Matic 7 Sii (ค.ศ. 1977) </p>
+              <h1><p className="card-text"> 2,800 ฿ </p></h1>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+</svg> </button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+</svg> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-</div>
-</header>
-<br />
-<br />
-<br /> 
-<main>
-
-
+  </div>
 </main>
-<br />
-<br />
-<br />
 
 <footer>
-
 <div className="container">
   <footer className="py-5">
     <div className="row">
+      <div className="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul className="nav flex-column">
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div className="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul className="nav flex-column">
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
       <div className="col-6 col-md-2 mb-3">
         <h5>Section</h5>
         <ul className="nav flex-column">
@@ -118,10 +285,8 @@ export default function index() {
         <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width={24} height={24}><use xlinkHref="#facebook" /></svg></a></li>
       </ul>
     </div>
-  </footer>
+</footer>
 </div>
-
-
 </footer>
     </>
   )

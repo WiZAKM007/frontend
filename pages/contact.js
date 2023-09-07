@@ -7,7 +7,7 @@ export default function contact() {
   return (
     <>
     <Head>
-      <title>jett</title>
+      <title>Winz</title>
     </Head>
   
   <header>

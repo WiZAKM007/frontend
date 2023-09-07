@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-export default function about() {
+export default function support() {
   return (
     <>
     <Head>
@@ -13,7 +13,6 @@ export default function about() {
 
  
     
-
     <header data-bs-theme="dark">
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
    <div className="container">
@@ -30,8 +29,9 @@ export default function about() {
           <Link className="nav-link active" aria-current="page" link href="/.">Index</Link>
         </li>
         <li className="nav-item dropdown">
+          
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" Link href="filmcamera">Winz</Link></li>
+            <li><Link className="dropdown-item" Link href="filmcamera">Film camera</Link></li>
             <li><Link className="dropdown-item" Link href="film">Film </Link></li>
             <li><hr className="dropdown-divider" /></li>
             <li><Link className="dropdown-item" Link href="lens">Lens</Link></li>
@@ -60,29 +60,102 @@ export default function about() {
    </div>
 </nav>
 </header>
-
 <main>
-
-<section className="section about-section gray-bg" id="about">
+<br></br><br></br>
+<div>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <div className="container">
-    <div className="row align-items-center flex-row-reverse">
-      <div className="col-lg-6">
-        <div className="about-text go-to">
-          <h3 className="dark-color">About Me</h3>
-          <h6 className="theme-color lead">เจ้าของเว็บไซต์ &amp; ช่างตีดาบ</h6>
-          <p> Winz นั้น <mark>เป็นร้านขายดาบญี่ปุ่น คุณภาพ</mark> 
-          โดยผู้ชำนาญการจริง ในเครือของร้าน
-          </p>   
-        </div>
-            </div>
-      <div className="col-lg-6">
-        <div className="about-avatar">
-          <img src="14.jpg" title alt />
+    <section className="section mb-5">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8 col-xl-7 text-center desc">
+            <h2 className="h1 mb-3">How can we help?</h2>
+            <p className="mx-lg-8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+            <form className="d-flex flex-column flex-md-row mt-4"><input type="email" className="form-control me-sm-2 mb-2 mb-sm-0" placeholder="you@yoursite.com" /> <button className="btn btn-primary flex-shrink-0" type="submit">Get Started</button></form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section className="section pt-0">
+      <div className="container">
+        <div className="row gy-4 justify-content-center">
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-question-circle" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Buying and Item Support</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-id-badge" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Licensing</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-user" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Your Account</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-trophy" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Copyright and Trademarks</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-book" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Tax &amp; Compliance</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-body d-flex">
+                <div className="icon-lg bg-primary rounded-3 text-white"><i className="fa fa-check" /></div>
+                <div className="ps-3 col">
+                  <h5 className="h6 mb-2"><a className="stretched-link text-reset" href="#">Licensing</a></h5>
+                  <p className="m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 </main>
 

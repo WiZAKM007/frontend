@@ -60,11 +60,11 @@
 //       Not signed in <br />
 //       <button onClick={() => signIn()}>Sign in</button>
 //     </>
-//   )
+//   https://frontend-ib7j.vercel.app/api/users )
 // }
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from "next/router";
-
+import Link from 'next/link';
 
 export default function Component({ posts }) {
   const { data: session } = useSession()
@@ -89,7 +89,7 @@ export default function Component({ posts }) {
     console.log("password:", jsonData.password);
     console.log("status:", jsonData.status);
 
-     fetch('https://a59c-49-229-108-181.ngrok-free.app/api/user', {
+     fetch('http://localhost:3000/api/users', {
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
@@ -188,7 +188,7 @@ export default function Component({ posts }) {
           <tr>
             <td>
           <button type="submit" className="btn btn-success">SAVE</button>&nbsp;&nbsp; {/* */}
-          <button type="submit" className="btn btn-warning">Back</button> {/* */}
+          <button className="btn btn-warning"><Link href="." > Back </Link></button> {/* */}
           </td>
           </tr>
           </form>

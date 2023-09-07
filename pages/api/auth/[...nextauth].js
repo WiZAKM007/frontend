@@ -20,18 +20,19 @@ export const authOptions = {
         // submitted and returns either a object representing a user or value
         // that is false/null if the credentials are invalid.
         // e.g. return { id: 1, name: 'J Smith', email: 'jsmith@example.com' }
-        // You can also use the req object to obtain additional parameters
+        // You can also use the `req` object to obtain additional parameters
         // (i.e., the request IP address)
-        const res = await fetch("https://www.melivecode.com/api/login", {
+        const res = await fetch("http://localhost:3000/api/login", {
           method: 'POST',
           body: JSON.stringify(credentials),
           headers: { "Content-Type": "application/json" }
         })
         const data = await res.json()
-  
+        const user = data.user[0]
+
         // If no error and we have user data, return it
-        if ( data.status == 'ok') {
-          return data.user
+        if (data.status == 'ok') {
+          return user
         }
         // Return null if user data could not be retrieved
         return null
@@ -41,9 +42,7 @@ export const authOptions = {
   secret: "LlKq6ZtYbr+hTC073mAmAh9/h2HwMfsFo4hrfCx5mLg=",
   callbacks: {
     async jwt({ token, user, account }) {
-
-        //console.log(user)
-   
+      //console.log(user)
       if (account) {
         token.accessToken = account.access_token
         token.user = user
@@ -58,5 +57,4 @@ export const authOptions = {
     }
   },
 }
-
 export default NextAuth(authOptions)

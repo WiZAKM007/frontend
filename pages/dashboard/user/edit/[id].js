@@ -34,7 +34,7 @@ export default function Component({ posts }) {
       status: data.get('txt_status')
     }
 
-      fetch( 'http://localhost:3000/api/users', {
+      fetch( 'https://frontend-nine-jade-32.vercel.app/api/users', {
         method: 'PUT', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
